@@ -1,155 +1,186 @@
+html {
+  font-size: 1rem;
+}
 
-body{
-    overflow-x: hidden;
-    
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+body {
+  overflow-x: hidden;
+
 }
 
 .card {
-    width: 16rem;
-    height: 18rem;
-    padding: .8em;
-    background: #f5f5f5;
-    position: relative;
-    overflow: visible;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    margin: 0.7rem;
-    
-   }
-   
-   .card-img {
-    background-color: #ffcaa6;
-    height: 40%;
-    width: 100%;
-    border-radius: .5rem;
-    transition: .3s ease;
-   }
-   
-   .card-info {
-    padding-top: 10%;
-   }
-   
-   svg {
-    width: 20px;
-    height: 20px;
-   }
-   
-   .card-footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
-   }
-   
-   /*Text*/
-   .text-title {
-    font-weight: 900;
-    font-size: 1.2em;
-    line-height: 1.5;
-   }
-   
-   .text-body {
-    font-size: .9em;
-    padding-bottom: 10px;
-   }
-   
-   /*Button*/
-   .card-button {
-    width: auto;
-    border: 1px solid #252525;
-    display: flex;
-    padding: .3em;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: .3s ease-in-out;
-   }
-   
-   /*Hover*/
-   .card-img:hover {
-    transform: translateY(-25%);
-    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
-   }
-   
-   .card-button:hover {
-    border: 1px solid #ffcaa6;
-    background-color: #ffcaa6;
-   }
-   
+  width: 16rem;
+  height: 18rem;
+  padding: .8em;
+  background: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 0.7rem;
+
+}
+
+.card-img {
+  background-color: #ffcaa6;
+  height: 40%;
+  width: 100%;
+  border-radius: .5rem;
+  transition: .3s ease;
+}
+
+.card-info {
+  padding-top: 10%;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.text-body {
+  font-size: .9em;
+  padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+  width: auto;
+  border: 1px solid #252525;
+  display: flex;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+}
+
+/*Hover*/
+.card-img:hover {
+  transform: translateY(-25%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+  border: 1px solid #ffcaa6;
+  background-color: #ffcaa6;
+}
 
 
 
-   .ngp1{
-    margin-right: 2rem;
-   }
 
-   .ngp2{
-    text-align: center;
-    padding: 1rem;
-   }
+.ngp1 {
+  margin-right: 2rem;
+}
 
-   .ngp3,img{
-    margin: 0;
-    padding: 0;
-   }
+.ngp2 {
+  text-align: center;
+  padding: 1rem;
+  
+}
 
-   .ngp4{
-    margin: 2rem;
-    
-   }
+.ngp2:hover{
+  border-radius: 34px;
+  background: linear-gradient(145deg, #e2e0e0, #ffffff);
+  box-shadow:  27px 27px 100px #dfdede,
+               -27px -27px 100px #ffffff;
+}
 
-   #ContactUs{
-    background-image: url(img/biker-407123_1920.jpg);
-    background-size: cover;
-    height: 100vh;
-    color: #f5f5f5;
-    text-align: right;
-    position: relative;
-    
-   }
-#ngp5{
-    position: absolute;
-    right: 3rem;
-    top: 2rem;
+.ngp3,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.ngp4 {
+  margin: 2rem;
+
+}
+
+#ContactUs {
+  background-image: url(img/biker-407123_1920.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #f5f5f5;
+  text-align: right;
+  position: relative;
+
+}
+
+#ngp5 {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
 }
 
 .btn {
-    transition: all 0.3s ease-in-out;
-    font-family: "Dosis", sans-serif;
-  }
-  
-  .btn {
-    width: 150px;
-    height: 60px;
-    border-radius: 50px;
-    background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
-    box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
-    outline: none;
-    cursor: pointer;
-    border: none;
-    font-size: 16px;
-    color: white;
-  }
-  
-  .btn:hover {
-    transform: translateY(3px);
-    box-shadow: none;
-  }
-  
-  .btn:active {
-    opacity: 0.5;
-  }
+  transition: all 0.3s ease-in-out;
+  font-family: "Dosis", sans-serif;
+}
 
-  .nav-item{
-    margin: 5px;
-  }
+.btn {
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  color: white;
+}
 
-  .ngp6{
-    background-color: #252525;
-    color: #dddddd;
-  }
+.btn:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+}
 
-  /* Input container */
+.btn:active {
+  opacity: 0.5;
+}
+
+.nav-item {
+  margin: 5px;
+}
+
+.ngp6 {
+  background-color: #252525;
+  color: #dddddd;
+}
+
+/* Input container */
 .input-container {
   position: relative;
   margin: 20px;
@@ -190,25 +221,26 @@ body{
 }
 
 /* Input field:focus styles */
-.input-field:focus + .input-label {
+.input-field:focus+.input-label {
   top: -20px;
   font-size: 12px;
   color: #6a6b6c;
 }
 
-.input-field:focus + .input-label + .input-highlight {
+.input-field:focus+.input-label+.input-highlight {
   width: 100%;
 }
 
-.ngp7{
+.ngp7 {
   margin-top: 1.3rem;
 }
 
-footer{
+footer {
   background-color: black;
   color: white;
 }
 
-.ngp8{
-  
+.ngp8 {
+  font-size: x-large;
+  font-style: italic;
 }
